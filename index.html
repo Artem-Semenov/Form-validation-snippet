@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form__body">
+          <h1 class="form__title">Form</h1>
+          <div class="form__item">
+            <label for="formName" class="form__label">Name*:</label>
+            <input
+              class="form__input _req"
+              type="text"
+              id="formName"
+              name="name"
+            />
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="form__label">Email*:</label>
+            <input
+              class="form__input _req _email"
+              type="text"
+              id="formEmail"
+              name="email"
+            />
+          </div>
+
+          <div class="form__item">
+            <div class="form__label">Preferred contact type</div>
+            <div class="options">
+              <div class="options__item">
+                <input
+                  class="options__input"
+                  type="radio"
+                  id="inputCallme"
+                  name="formRadio"
+                />
+                <label for="inputCallme" class="options__label">Call me</label>
+              </div>
+              <div class="options__item">
+                <input
+                  class="options__input"
+                  type="radio"
+                  id="inputWriteMe"
+                  name="formRadio"
+                />
+                <label for="inputWriteMe" class="options__label"
+                  >Write me</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="formTel" class="form__label">Tel*:</label>
+            <input
+              class="form__input _req"
+              type="tel"
+              id="formTel"
+              name="tel"
+            />
+          </div>
+          <div class="form__item">
+            <label for="formMessage"></label>
+            <textarea
+              class="form__input"
+              name="message"
+              id="formMessage"
+            ></textarea>
+          </div>
+
+          <div class="form__item">
+            <div class="form__label">Your age</div>
+            <select name="age" id="" class="select">
+              <option value="1" selected="selected">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Attach photo</div>
+            <div class="file">
+              <div class="file__item">
+                <input
+                  accept=".jpg, .png, .gif"
+                  type="file"
+                  name="image"
+                  id="formImage"
+                  class="file__input"
+                />
+                <div class="file__button">Choose</div>
+              </div>
+              <div class="file__preview" id="file-preview"></div>
+            </div>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
+              <input
+                checked
+                type="checkbox"
+                class="checkbox__input _req"
+                name="agreement"
+                id="formAgreement"
+              />
+              <label for="formAgreement" class="checkbox__label"
+                >I agree with <a href="#">terms and conditions</a></label
+              >
+            </div>
+          </div>
+          <div class="form__item">
+            <button type="submit" class="form__button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
