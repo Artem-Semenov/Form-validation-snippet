@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let reader = new FileReader();
     reader.onload = (e) => {
-      console.log("111");
       previewWrapper.innerHTML = `<img src ="${e.target.result}">`;
     };
     reader.onerror = () => {
